@@ -1,0 +1,153 @@
+@font-face {
+  /* font taken from https://www.1001fonts.com/ */
+  font-family: Digital;
+  src: url(./digital.ttf);
+}
+
+@font-face {
+  /* Free for private and commercial use */
+  font-family: Dark;
+  src: url(./pdark.ttf);
+}
+
+@font-face {
+  /* Creative Commons Attribution Noncommercial Share Alike */
+  font-family: Trickax;
+  src: url(./trickax.otf);
+}
+
+body {
+  background-color: #1b1b1b;
+}
+
+#container {
+  height: 505px;
+  width: 340px;
+  /* border: 1px solid transparent; */
+  margin: 50px auto;
+  padding: 10px 0 0;
+  text-align: center;
+  border-radius: 15px;
+  color: #dfdfdf;
+  background: url(./img/dark-triangles.png);
+  -webkit-box-shadow: 0px 10px 20px 3px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 10px 20px 3px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 10px 20px 3px rgba(0, 0, 0, 0.75);
+}
+
+#brandName {
+  font-size: 1.4rem;
+  font-family: Dark;
+  padding: 5px;
+  text-shadow: 0px 0px 10px #FE59E6;
+}
+
+#screen {
+  width: 85%;
+  height: 100px;
+  background-color: #6bee5d;
+  margin: 0 auto;
+  padding: 10px;
+  box-sizing: border-box;
+  color: #3c3b3b;
+  font-family: Digital;
+}
+
+#volBar {
+  display: block;
+  background-color: #2f2e2e;
+  height: 4px;
+  box-sizing: border-box;
+  margin: 0 auto;
+  animation: appear 1s;
+}
+
+#volDisplay {
+  width: 100px;
+  height: auto;
+  margin: 0 auto;
+  animation: appear 1s;
+}
+
+#idDisplay {
+  font-size: 2.6rem;
+  margin: 0 auto 15px;
+  animation: appear 1s;
+}
+
+#midPanel {
+  width: 90%;
+  margin: 10px auto 5px;
+  font-family: Trickax;
+  color: #505050;
+}
+
+.volButton {
+  border-radius: 10px;
+  width: 30%;
+  margin: 5px;
+  outline: none;
+  font-size: 1.3rem;
+  cursor: pointer;
+  color: #606060;
+  -webkit-box-shadow: 0px 10px 20px 3px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 10px 20px 3px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 10px 20px 3px rgba(0, 0, 0, 0.75);
+}
+
+.lightened:active {
+  color: #fe59e6;
+  text-shadow: 0px 0px 10px #FE59E6;
+  -webkit-box-shadow: 0px 0px 15px 0px rgba(189, 61, 189, 1);
+  -moz-box-shadow: 0px 0px 15px 0px rgba(189, 61, 189, 1);
+  box-shadow: 0px 0px 15px 0px rgba(189, 61, 189, 1);
+}
+
+#powButton {
+  color: #606060;
+  border-radius: 10px;
+  margin: 5px 15px;
+  outline: none;
+  font-size: 1.3rem;
+  cursor: pointer;
+  padding: 5px 10px;
+  -webkit-box-shadow: 0px 10px 20px 3px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 10px 20px 3px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 10px 20px 3px rgba(0, 0, 0, 0.75);
+}
+
+.turnedOn {
+  color: #fe59e6 !important;
+  text-shadow: 0px 0px 10px #FE59E6;
+}
+
+@keyframes appear {
+  0% {
+    opacity: 0
+  }
+
+  100% {
+    opacity: 1
+  }
+}
+
+#buttonsPanel {
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.button {
+  width: 30%;
+  display: inline-block;
+  font-size: 30px;
+  cursor: pointer;
+  font-family: Trickax;
+  cursor: pointer;
+  border-radius: 20px;
+  margin: 5px;
+  background: radial-gradient(#202020, #0a0a0a);
+  -webkit-box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.75);
+}
