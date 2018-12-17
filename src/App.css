@@ -18,13 +18,16 @@
 
 body {
   background-color: #1b1b1b;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  height: 100vh;
 }
 
 #container {
   height: 505px;
   width: 340px;
-  /* border: 1px solid transparent; */
-  margin: 50px auto;
   padding: 10px 0 0;
   text-align: center;
   border-radius: 15px;
